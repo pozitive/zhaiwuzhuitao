@@ -1,0 +1,90 @@
+@import "foundation/functions";
+/* Compass */
+@import "compass/css3/border-radius";
+@import "compass/css3/box-shadow";
+@import "compass/css3/images";
+$rem-base: 16px;
+$row-width: rem-calc(1000);
+$column-gutter: rem-calc(30);
+$total-columns: 12;
+
+$red: #ED1A23;
+$black: #240000;
+$blue: #599cad;
+$pink: #ff4958;
+$yellow: #B59956;
+$grey: #d2c2a8;
+$green: #02AA53;
+$white: #FFFFFF;
+
+$body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-weight: normal;
+$body-font-style: normal;
+$header-font-family: $body-font-family;
+
+//$body-bg: scale-lighness($red, 50)
+//$body-bg: lighten($red, 50%);
+#home {
+    @include background(linear-gradient(center bottom, #440708, #B9171D),
+			radial-gradient(#ece, #fff 100px));
+    padding: 30px 0;
+}
+
+
+$body-font-color: $black;
+$header-font-color: $pink;
+#top {
+    /* background: $yellow; */
+   @include background(linear-gradient(center bottom, #EED482, #DDA61F),
+			radial-gradient(#ece, #fff 100px));
+//    border-radius: 8px 8px 0 0;
+    @include border-top-left-radius(10px);
+    @include border-top-right-radius(10px);
+    @include single-box-shadow($blue, 0, 3px, 4px, false, false);
+    padding: 10px 0;
+    h1, h2, h3, h4, h5, h6, p {
+	color: $red;
+    }
+    p {
+
+    }
+    .slogan {
+	margin-top: 10px;
+    }
+    .address {
+	margin-top: 10px;
+    }
+}
+#main {
+    padding: 20px 0;
+    background: $grey;
+    @include border-bottom-left-radius(10px);
+    @include border-bottom-right-radius(10px);
+}
+#sidebar {
+   @include background(linear-gradient(center bottom, #E1B238, #E7C25B),
+			radial-gradient(#ece, #fff 100px));
+    @include border-radius(5px, 5px); 
+    li {
+	a {
+	    color: $red;
+	    padding: 0 10px;
+	    &:hover{
+		color: white;
+		background: none repeat scroll 0 0 rgba(0, 64, 84, 0.03);
+
+	    }
+	}
+    }
+}
+#footer {
+    background: darken( $green, 15% ); 
+    height: 145px;
+    margin: 40px 0 20px 0;
+    padding: 20px 0 0;
+    h4, p  {
+	color: white;
+    }
+}
+
+@import 'foundation';
