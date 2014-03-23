@@ -1,0 +1,15 @@
+%header
+  %nav.top-bar.shadow{data: {topbar: "", options: "is_hover: false"}}
+    %ul.title-area
+      %li.name
+        %h1#logo
+          = link_to image_tag('logo.png'), root_path
+      %li.toggle-topbar.menu-icon
+        %a{href: "#"}
+          %span Menu
+    %section{class: "top-bar-section"}
+      %ul{class: "right"}
+        %li.divider
+        %li= link_to 'Home', root_path
+        %li.divider
+        %li= link_to 'Home', root_path
