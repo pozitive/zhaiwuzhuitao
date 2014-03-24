@@ -127,7 +127,7 @@ body {
 #hero {
     .slider-wrapper {
 	height: 438px;
-	background: url('Panorama-Red-Square.jpg') repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background: image-url('Panorama-Red-Square.jpg') repeat scroll 0 0 rgba(0, 0, 0, 0);
 	background-position: 0% 0%;
 	border-bottom: 5px solid #F6F6F6 !important;
 	margin-bottom: 20px;
@@ -177,7 +177,7 @@ main {
 .footer {
     border-top: 5px solid #F6F6F6 !important;
     padding: 40px 0;
-    background: url("bg-footer.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: image-url("bg-footer.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 
 #footerpan {
