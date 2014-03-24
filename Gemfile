@@ -16,7 +16,7 @@ gem 'foundation-rails'
 gem 'figaro'
 gem 'devise'
 gem 'high_voltage', '~> 2.1.0'
-
+gem 'foundation-icons-sass-rails'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

@@ -1,0 +1,128 @@
+%header#topbar
+  %nav.top-bar.shadow{data: {topbar: "", options: "is_hover: false"}}
+    %ul.title-area
+      %li.name
+        %h1#logo
+          = link_to (image_tag('logo.png', height: '60', width: '60') + "债务追讨在俄罗斯"), root_path
+
+      %li.toggle-topbar.menu-icon
+        %a{href: "#"}
+          %span Menu
+    %section{class: "top-bar-section"}
+      %ul{class: "right"}
+        %li
+          %a  首页
+        %li 
+          %a 服务和价格
+        %li
+          %a 委托书
+        %li 
+          %a 订购讨债
+        %li
+          %a 亏损
+        %li 
+          %a 名单
+        %li 
+          %a 诈者
+        %li
+          %a 俄罗斯
+        %li 
+          %a 何讨债
+        %li 
+          %a 关于
+        %li 
+          %a 联系
+#hero
+  .slider-wrapper
+    %ul#featured{data: {orbit: ""}}
+      %li{data: { "orbit-slide" => "headline-1"}}
+        .row
+          .small-12.large-6.columns
+            .panel
+              %h1 债务追讨在俄罗斯
+              %h3 律师为中国企业家
+              %p 如果你在俄罗斯工作了，失去了他们的钱有，那么请与我们联系。
+          .small-4.large-offset-2.columns.hide-for-medium.hide-for-small
+            = image_tag('logo.png')
+      %li{data: { "orbit-slide" => "headline-2"}}
+        .row
+          .small-12.large-6.columns
+            .panel
+              %h1 嘿你！阿呆俄罗斯！
+              %h3 不要欺骗中国人！
+              %p 然后我们给您的所有走到一起！
+          .large-4.large-offset-2.columns.hide-for-medium.hide-for-small
+            = image_tag('kit.jpg', height: '', width: '')
+      %li{data: { "orbit-slide" => "headline-3"}}
+        .row
+          .small-12.large-6.columns
+            .panel
+              %h1 嘿！俄罗斯骗子！
+              %h3 给了钱我的父母！
+              %p 然后我会来找你与俄罗斯的律师！我会把你关进监狱！
+          .large-4.large-offset-2.columns.hide-for-medium.hide-for-small
+            = image_tag('haiji.jpg')
+
+%main
+  %hr.white
+  .row
+    .small-12.columns.panel.left-border
+      %p 熟悉你的情况，我们会告诉你，可以退还你的钱还是不能。如果我们不能帮助你得到你的钱回来 - 那会告诉你它马上和金钱为他们工作，带着你不会！
+      %button.tiny.round 按键
+  %hr.white
+  .row
+    .small-12.medium-4.columns.icons
+      .small-4.columns
+        %i.fi-shield
+      .small-8.columns
+        %p 你已经在俄罗斯失去了金钱 - 与我们联系。
+    .small-12.medium-4.columns.icons
+      .small-4.columns
+        %i.fi-target-two
+      .small-8.columns
+        %p 你已经在俄罗斯失去了金钱 - 与我们联系。
+    .small-12.medium-4.columns.icons
+      .small-4.columns
+        %i.fi-key
+      .small-8.columns
+        %p 你已经在俄罗斯失去了金钱 - 与我们联系。
+  %hr.white
+  .row
+    .small-12.columns
+      %h1 债务追讨在俄罗斯
+      %hr
+      %h3 律师为中国企业家
+      %p 如果你在俄罗斯工作了，失去了他们的钱有，那么请与我们联系。
+      %h3 我们可以帮助你得到你的钱回来。
+      %p 在俄罗斯，辛勤工作。在俄罗斯，很多是不可靠的合作伙伴。
+      %p 在俄罗斯，官员和警察受贿。中国的企业家是骗人的。
+      %p 没有人在俄罗斯不会说中国话。
+      %p 没有人帮助的中国公民。
+      %p 中国企业家很难在俄罗斯做生意。
+      %h3 如果你已经在俄罗斯失去了金钱 - 与我们联系。
+      %h3 我们尽量帮你。
+      %p 但不要忘了 - 我们可以帮你只有当你有文档，你的产品和你的钱。
+      %h3 如果没有文件，我们不能帮你。
+      %p 债务追讨在俄罗斯 - 一个困难的工作。对于这份工作，你必须付钱。
+      %h3 你必须向我们支付这笔钱。
+      %p 然后我们开始工作。
+      %p 熟悉你的情况，我们会告诉你，可以退还你的钱还是不能。如果我们不能帮助你得到你的钱回来 - 那会告诉你它马上和金钱为他们工作，带着你不会！
+      %h3我们不是骗子。
+      %p 而对于那些谁欺骗了你，显示画面
+      %p 你见下文 -
+      = image_tag('kit.jpg', height: '', width: '')
+      %p 嘿！你！阿呆俄罗斯！
+      %p 不要欺骗中国人！
+      %p 然后我们给您的所有走到一起！
+
+
+.footer.text-center
+  %p 回忆 - 我们的律师事务所从事偿还债务在1994年！
+  = image_tag('logo.png', height: '', width: '', class: "text-center")
+  %p
+    %a{href: "http://www.dolg-vozvrat.com"} 我们在俄罗斯网站 - www.dolg-vozvrat.com
+
+%footer#footer
+  .row
+    .medium-12.columns.text-center
+      %p 俄罗斯莫斯头塔34号楼 +7 (495) 514-29-37 info@zhaiwu-zhuitao.com
