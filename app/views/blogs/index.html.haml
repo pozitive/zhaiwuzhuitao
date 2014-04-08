@@ -4,7 +4,7 @@
 
 - @blogs.each do |blog|
   %h3= link_to blog.name, blog_path(blog)
-  %p= truncate(blog.content)
+  %p= markdown(truncate(blog.content, length: 200))
   %p.small= blog.updated_at
   .manage
     = link_to 'Show', blog, class: "button success tiny"

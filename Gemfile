@@ -18,6 +18,7 @@ gem 'devise'
 gem 'high_voltage', '~> 2.1.0'
 gem 'foundation-icons-sass-rails'
 gem 'friendly_id'
+gem 'redcarpet'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

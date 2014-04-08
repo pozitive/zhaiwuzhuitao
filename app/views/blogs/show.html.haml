@@ -1,7 +1,7 @@
 %p#notice= notice
 
 %h1= @blog.name
-%p= @blog.content
+%p= markdown(@blog.content)
 
 
 - if user_signed_in?
