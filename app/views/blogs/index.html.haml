@@ -1,25 +1,16 @@
-%h1 Listing blogs
+%header
+  %h1 博客列表
+  %hr
 
-%table
-  %tr
-    %th Name
-    %th Summary
-    %th Keyword
-    %th Content
-    %th
-    %th
-    %th
+- @blogs.each do |blog|
+  %h3= link_to blog.name, blog_path(blog)
+  %p= truncate(blog.content)
+  %p.small= blog.updated_at
+  .manage
+    = link_to 'Show', blog, class: "button success tiny"
+    - if user_signed_in?
+      = link_to 'Edit', edit_blog_path(blog), class: "button tiny" 
+      = link_to 'Destroy', blog, :method => :delete, :data => { :confirm => 'Are you sure?' }, class: "button tiny alert"  
 
-  - @blogs.each do |blog|
-    %tr
-      %td= blog.name
-      %td= blog.summary
-      %td= blog.keyword
-      %td= blog.content
-      %td= link_to 'Show', blog
-      %td= link_to 'Edit', edit_blog_path(blog)
-      %td= link_to 'Destroy', blog, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
-%br
-
-= link_to 'New Blog', new_blog_path
+= link_to 'New Blog', new_blog_path, class: "button success" if user_signed_in?

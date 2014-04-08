@@ -111,11 +111,6 @@ $topbar-divider-border-top: solid 1px $red;
 // $topbar-sticky-class: ".sticky";
 // $topbar-arrows: true; //Set false to remove the triangle icon from the menu item
 
-body {
-    h1 {
-	color: $pink;
-    }
-}
 #topbar {
     border-bottom: 5px solid #F6F6F6 !important
 }
@@ -124,7 +119,6 @@ body {
 	margin-right: 20px;
     }
 }
-
 // Hero
 #hero {
     .row {
@@ -163,6 +157,10 @@ body {
     }
 }
 main {
+    margin: rem-calc(50) auto rem-calc(100) auto;
+    h1 {
+	margin-top: 0;
+    }
     .left-border {
 	border-left: 4px solid $pink;
     }
@@ -211,7 +209,7 @@ main {
 
 
 .sidenav {
-    border-top: 2px solid $pink !important;
+    border-left: 2px solid $pink !important;
     background: image-url("bg-footer.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
     li {
 	a {
