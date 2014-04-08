@@ -1,5 +1,6 @@
 Zhaiwuzhuitao::Application.routes.draw do
 
+  devise_for :users
   resources :blogs
 
   get "/pages/*id" => 'pages#show', as: :page, format: false

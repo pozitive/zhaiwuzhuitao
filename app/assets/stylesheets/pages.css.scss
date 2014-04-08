@@ -139,7 +139,8 @@ body {
 }
 .low {
     .scroller {
-	height: 150px;
+	background-image: none;
+	height: 50px;
     }
 }
 .high {
@@ -150,7 +151,7 @@ body {
 .scroller {
     height: 500px;
     background-attachment: fixed;
-    background-color: #9A958F;
+    background-color: #094381;
     background-image: image-url('moscow.jpg');
     background-position: left center;
     background-repeat: no-repeat;
