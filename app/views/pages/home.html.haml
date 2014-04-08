@@ -1,89 +1,29 @@
-%header#toprow
-  .row
-    .small-5.medium-3.large-3.columns.logo
-      = link_to image_tag('logo.png', height: '150', width: '150'), root_path
-    .small-7.medium-5.large-6.columns.slogan.text-center
-      %h3 国际法律代理 
-      %h3 债务追讨在俄罗斯
-      %h3 帮助中国企业家
-    .medium-4.large-3.columns.address.hide-for-small
-      %p +7 (495) 514-29-37
-      %p info@zhaiwu-zhuitao.com
-      %p 地址: 俄罗斯莫斯头塔34号楼
-#hero
-  .scroller
-    .row
-      .small-12.columns.text-center
-        .alert-box{data: {alert: ""}}
-          %a.close &times;
-          %h1 我们尽量帮你
-          %button.alert.radius 联系我们
+- content_for :hero do
+  = render "hero"
 
 
-%main
-  %hr.white
-  .row 
-    .small-12.medium-3.columns
-      %section.sidenav
-        %ul.side-nav
-          %li
-            %a  首页
-          %li 
-            %a 服务和价格
-          %li
-            %a 委托书
-          %li 
-            %a 订购讨债
-          %li
-            %a 亏损
-          %li 
-            %a 名单
-          %li 
-            %a 诈者
-          %li
-            %a 俄罗斯
-          %li 
-            %a 何讨债
-          %li 
-            %a 关于
-          %li 
-            %a 联系
-    .small-12.medium-9.columns
-      %h2 债务追讨在俄罗斯
-      %hr
-      %h3 律师为中国企业家
-      %p 如果你在俄罗斯工作了，失去了他们的钱有，那么请与我们联系。
-      %h3 我们可以帮助你得到你的钱回来。
-      %p 在俄罗斯，辛勤工作。在俄罗斯，很多是不可靠的合作伙伴。
-      %p 在俄罗斯，官员和警察受贿。中国的企业家是骗人的。
-      %p 没有人在俄罗斯不会说中国话。
-      %p 没有人帮助的中国公民。
-      %p 中国企业家很难在俄罗斯做生意。
-      %h3 如果你已经在俄罗斯失去了金钱 - 与我们联系。
-      %h3 我们尽量帮你。
-      %p 但不要忘了 - 我们可以帮你只有当你有文档，你的产品和你的钱。
-      %h3 如果没有文件，我们不能帮你。
-      %p 债务追讨在俄罗斯 - 一个困难的工作。对于这份工作，你必须付钱。
-      %h3 你必须向我们支付这笔钱。
-      %p 然后我们开始工作。
-      %p 熟悉你的情况，我们会告诉你，可以退还你的钱还是不能。如果我们不能帮助你得到你的钱回来 - 那会告诉你它马上和金钱为他们工作，带着你不会！
-      %h3我们不是骗子。
-      %p 而对于那些谁欺骗了你，显示画面
-      %p 你见下文 -
-      = image_tag('kit.jpg', height: '', width: '')
-      %p 嘿！你！阿呆俄罗斯！
-      %p 不要欺骗中国人！
-      %p 然后我们给您的所有走到一起！
-
-
-.footer.text-center
-  %p 回忆 - 我们的律师事务所从事偿还债务在1994年！
-  = image_tag('logo.png', height: '', width: '', class: "text-center")
-  %p
-    %a{href: "http://www.dolg-vozvrat.com"} 我们在俄罗斯网站 - www.dolg-vozvrat.com
-
-%footer#footerpan
-  .row
-    .medium-12.columns.text-center
-      %p 俄罗斯莫斯头塔34号楼 +7 (495) 514-29-37 info@zhaiwu-zhuitao.com
-
+%h2 债务追讨在俄罗斯
+%hr
+%h3 律师为中国企业家
+%p 如果你在俄罗斯工作了，失去了他们的钱有，那么请与我们联系。
+%h3 我们可以帮助你得到你的钱回来。
+%p 在俄罗斯，辛勤工作。在俄罗斯，很多是不可靠的合作伙伴。
+%p 在俄罗斯，官员和警察受贿。中国的企业家是骗人的。
+%p 没有人在俄罗斯不会说中国话。
+%p 没有人帮助的中国公民。
+%p 中国企业家很难在俄罗斯做生意。
+%h3 如果你已经在俄罗斯失去了金钱 - 与我们联系。
+%h3 我们尽量帮你。
+%p 但不要忘了 - 我们可以帮你只有当你有文档，你的产品和你的钱。
+%h3 如果没有文件，我们不能帮你。
+%p 债务追讨在俄罗斯 - 一个困难的工作。对于这份工作，你必须付钱。
+%h3 你必须向我们支付这笔钱。
+%p 然后我们开始工作。
+%p 熟悉你的情况，我们会告诉你，可以退还你的钱还是不能。如果我们不能帮助你得到你的钱回来 - 那会告诉你它马上和金钱为他们工作，带着你不会！
+%h3我们不是骗子。
+%p 而对于那些谁欺骗了你，显示画面
+%p 你见下文 -
+= image_tag('kit.jpg', height: '', width: '')
+%p 嘿！你！阿呆俄罗斯！
+%p 不要欺骗中国人！
+%p 然后我们给您的所有走到一起！

@@ -1,5 +1,7 @@
 Zhaiwuzhuitao::Application.routes.draw do
 
+  resources :blogs
+
   get "/pages/*id" => 'pages#show', as: :page, format: false
   root to: 'pages#show', id: 'home'
 

@@ -124,15 +124,9 @@ body {
 	margin-right: 20px;
     }
 }
+
+// Hero
 #hero {
-    .slider-wrapper {
-	height: 438px;
-	background: image-url('Panorama-Red-Square.jpg') repeat scroll 0 0 rgba(0, 0, 0, 0);
-	background-position: 0% 0%;
-	border-bottom: 5px solid #F6F6F6 !important;
-	margin-bottom: 20px;
-	transition: background-position 1.4s ease-in-out 0.3s;
-    }
     .row {
 	padding-top: 100px;
     }
@@ -142,14 +136,31 @@ body {
     h1 {
 	margin-bottom: 50px;
     }
-    .panel {
-	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
-	border:none;
-    }
-    
-
 }
-
+.low {
+    .scroller {
+	height: 150px;
+    }
+}
+.high {
+    .scroller {
+	height: 500px;
+    }
+}
+.scroller {
+    height: 500px;
+    background-attachment: fixed;
+    background-color: #9A958F;
+    background-image: image-url('moscow.jpg');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFFFFF;
+    .alert-box {
+	background: image-url("bg-footer.png") repeat scroll 0 0 rgba(0, 64, 84, 0.03);
+	border: 0px solid white;
+    }
+}
 main {
     .left-border {
 	border-left: 4px solid $pink;
@@ -165,27 +176,16 @@ main {
 	    background: none repeat scroll 0 0 #FCFCFC;
 	    border: 1px solid #F6F6F6;
 	}
-	
     }
-
-
 }
 .white {
     border-color: #FFF;
     color: white;
 }
-.footer {
-    border-top: 5px solid #F6F6F6 !important;
-    padding: 40px 0;
-    background: image-url("bg-footer.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
-}
-
 #footerpan {
     padding: 40px 0;
     border-top: 5px solid #F6F6F6 !important;
 }
-
-
 
 #toprow {
     border-top: 2px solid #ED1B24 !important;
@@ -207,20 +207,6 @@ main {
     background: image-url("bg-footer.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 
-.scroller {
-    height: 500px;
-    background-attachment: fixed;
-    background-color: #9A958F;
-    background-image: image-url('moscow.jpg');
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #FFFFFF;
-    .alert-box {
-	background: image-url("bg-footer.png") repeat scroll 0 0 rgba(0, 64, 84, 0.03);
-	border: 0px solid white;
-    }
-}
 
 
 .sidenav {
