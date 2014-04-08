@@ -13,10 +13,13 @@
     = f.label :summary
     = f.text_field :summary
   .field
+    = f.label :content
+    = f.text_area :content
+  .field
     = f.label :keyword
     = f.text_field :keyword
   .field
-    = f.label :content
-    = f.text_area :content
+    = f.label :weight
+    = f.text_field :weight
   .actions
     = f.submit 'Save'

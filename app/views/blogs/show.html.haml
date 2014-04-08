@@ -1,7 +1,10 @@
-%p#notice= notice
+- title @blog.name
+- meta_description @blog.summary 
+- meta_keywords @blog.keyword
+= notice
 
 %h1= @blog.name
-%p= markdown(@blog.content)
+= markdown(@blog.content)
 
 
 - if user_signed_in?

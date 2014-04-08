@@ -1,24 +1,5 @@
 %section.sidenav
   %ul.side-nav
-    %li
-      %a  首页
-    %li 
-      %a 服务和价格
-    %li
-      %a 委托书
-    %li 
-      %a 订购讨债
-    %li
-      %a 亏损
-    %li 
-      %a 名单
-    %li 
-      %a 诈者
-    %li
-      %a 俄罗斯
-    %li 
-      %a 何讨债
-    %li 
-      %a 关于
-    %li 
-      %a 联系
+    %li= link_to "首页", root_path
+    - Blog.order("weight Desc").all.each do |blog|
+      %li= link_to blog.name, blog_path(blog)
