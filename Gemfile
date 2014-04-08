@@ -19,6 +19,7 @@ gem 'high_voltage', '~> 2.1.0'
 gem 'foundation-icons-sass-rails'
 gem 'friendly_id'
 gem 'redcarpet'
+gem 'social-share-button'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
