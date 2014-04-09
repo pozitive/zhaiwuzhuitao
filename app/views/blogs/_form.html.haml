@@ -8,13 +8,13 @@
 
   .field
     = f.label :name
-    = f.text_field :name
+    = f.text_field :name, {required: ''}
   .field
     = f.label :summary
     = f.text_field :summary
   .field
     = f.label :content
-    = f.text_area :content
+    = f.text_area :content, {required: ''}
   .field
     = f.label :keyword
     = f.text_field :keyword

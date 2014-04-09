@@ -5,4 +5,4 @@
         .alert-box{data: {alert: ""}}
           %a.close &times;
           %h1 我们尽量帮你
-          %button.alert.radius 联系我们
+          = link_to '联系我们', new_message_path, class: 'button alert radius'
