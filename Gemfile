@@ -20,6 +20,9 @@ gem 'foundation-icons-sass-rails'
 gem 'friendly_id'
 gem 'redcarpet'
 gem 'social-share-button'
+gem 'bcrypt-ruby', '~> 3.0.0' # Use ActiveModel has_secure_password
+gem 'unicorn' # Use unicorn as the app server
+gem 'capistrano', group: :development # Use Capistrano for deployment
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
