@@ -1,5 +1,5 @@
 %section.sidenav
   %ul.side-nav
-    %li= link_to "首页", root_path
+    %li= link_to_unless_current "首页", root_path
     - Blog.order("weight asc").all.each do |blog|
-      %li= link_to blog.name, blog_path(blog)
+      %li= link_to_unless_current blog.name, blog_path(blog)
